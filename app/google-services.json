@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "493805813174",
+    "project_id": "lavajavaapp",
+    "storage_bucket": "lavajavaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493805813174:android:34d7952aca47faad0b1517",
+        "android_client_info": {
+          "package_name": "com.example.lavajavaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493805813174-4s3umjfb533bh2645uh2aqnq9sgno0n0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lavajavaapp",
+            "certificate_hash": "6c69e1dde938e408d08859ce3479a7f5a0aa9c34"
+          }
+        },
+        {
+          "client_id": "493805813174-pm7qv9k5saturof80oftpi5jlm6le33g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkbh-fnpwCqRWXfQxwwA6uNWJ2SKSX5Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493805813174-pm7qv9k5saturof80oftpi5jlm6le33g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
