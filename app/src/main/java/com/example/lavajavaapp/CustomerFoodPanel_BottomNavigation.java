@@ -9,12 +9,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.CakeMania.app.CustomerFoodPanel.CustomerCartFragment;
-import com.CakeMania.app.CustomerFoodPanel.CustomerHomeFragment;
-import com.CakeMania.app.CustomerFoodPanel.CustomerOrderFragment;
-import com.CakeMania.app.CustomerFoodPanel.CustomerProfileFragment;
-import com.CakeMania.app.CustomerFoodPanel.CustomerTrackFragment;
-import com.CakeMania.app.SendNotification.Token;
+
+import com.example.lavajavaapp.CustomerFoodPanel.CustomerCartFragment;
+import com.example.lavajavaapp.CustomerFoodPanel.CustomerHomeFragment;
+import com.example.lavajavaapp.CustomerFoodPanel.CustomerOrderFragment;
+import com.example.lavajavaapp.CustomerFoodPanel.CustomerProfileFragment;
+import com.example.lavajavaapp.CustomerFoodPanel.CustomerTrackFragment;
+import com.example.lavajavaapp.SendNotification.Token;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

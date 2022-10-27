@@ -8,7 +8,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.CakeMania.app.R;
+
+import com.example.lavajavaapp.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class CustomerOnlinePayment extends AppCompatActivity {
