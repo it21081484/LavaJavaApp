@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back4"
-    tools:context="my.food_on.app.ChefFoodPanel.Update_Delete_Dish">
+    tools:context=".ChefFoodPanel.Update_Delete_Dish">
 
     <ImageButton
         android:id="@+id/imageupload"

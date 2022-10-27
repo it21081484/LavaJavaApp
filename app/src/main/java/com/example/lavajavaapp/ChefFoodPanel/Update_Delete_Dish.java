@@ -21,6 +21,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.bumptech.glide.Glide;
 import com.example.lavajavaapp.Chef;
 import com.example.lavajavaapp.ChefFoodPanel_BottomNavigation;
 import com.example.lavajavaapp.R;
@@ -176,12 +177,12 @@ public class Update_Delete_Dish extends AppCompatActivity {
                 databaseReference = firebaseDatabase.getInstance().getReference("FoodSupplyDetails");
                 storage = FirebaseStorage.getInstance();
                 storageReference = storage.getReference();
-                imageButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        onSelectImageClick(v);
-                    }
-                });
+//                imageButton.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        onSelectImageClick(v);
+//                    }
+//                });
             }
 
             @Override
@@ -280,60 +281,60 @@ public class Update_Delete_Dish extends AppCompatActivity {
     }
 
 
-    private void onSelectImageClick(View v) {
+//    private void onSelectImageClick(View v) {
+//
+//        CropImage.startPickImageActivity(this);
+//    }
 
-        CropImage.startPickImageActivity(this);
-    }
-
-    @Override
-    @SuppressLint("NewApi")
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-
-        if (requestCode == CropImage.PICK_IMAGE_CHOOSER_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            imageuri = CropImage.getPickImageResultUri(this, data);
-
-            if (CropImage.isReadExternalStoragePermissionsRequired(this, imageuri)) {
-                mCropimageuri = imageuri;
-                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 0);
-
-            } else {
-
-                startCropImageActivity(imageuri);
-            }
-        }
-
-        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
-            CropImage.ActivityResult result = CropImage.getActivityResult(data);
-            if (resultCode == RESULT_OK) {
-                ((ImageButton) findViewById(R.id.imageupload)).setImageURI(result.getUri());
-                Toast.makeText(this, "Cropped Successfully" + result.getSampleSize(), Toast.LENGTH_SHORT).show();
-            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
-                Toast.makeText(this, "cropping failed" + result.getError(), Toast.LENGTH_SHORT).show();
-            }
-        }
-        super.onActivityResult(requestCode, resultCode, data);
-    }
-
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-
-        if (mCropimageuri != null && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            startCropImageActivity(mCropimageuri);
-        } else {
-            Toast.makeText(this, "cancelling,required permission not granted", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    private void startCropImageActivity(Uri imageuri) {
-
-        CropImage.activity(imageuri)
-                .setGuidelines(CropImageView.Guidelines.ON)
-                .setMultiTouchEnabled(true)
-                .start(this);
+//    @Override
+//    @SuppressLint("NewApi")
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//
+//
+//        if (requestCode == CropImage.PICK_IMAGE_CHOOSER_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+//            imageuri = CropImage.getPickImageResultUri(this, data);
+//
+//            if (CropImage.isReadExternalStoragePermissionsRequired(this, imageuri)) {
+//                mCropimageuri = imageuri;
+//                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 0);
+//
+//            } else {
+//
+//                startCropImageActivity(imageuri);
+//            }
+//        }
+//
+//        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+//            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+//            if (resultCode == RESULT_OK) {
+//                ((ImageButton) findViewById(R.id.imageupload)).setImageURI(result.getUri());
+//                Toast.makeText(this, "Cropped Successfully" + result.getSampleSize(), Toast.LENGTH_SHORT).show();
+//            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+//                Toast.makeText(this, "cropping failed" + result.getError(), Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//        super.onActivityResult(requestCode, resultCode, data);
+//    }
 
 
-    }
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+//                                           @NonNull int[] grantResults) {
+//
+//        if (mCropimageuri != null && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//            startCropImageActivity(mCropimageuri);
+//        } else {
+//            Toast.makeText(this, "cancelling,required permission not granted", Toast.LENGTH_SHORT).show();
+//        }
+//    }
+//
+//    private void startCropImageActivity(Uri imageuri) {
+//
+//        CropImage.activity(imageuri)
+//                .setGuidelines(CropImageView.Guidelines.ON)
+//                .setMultiTouchEnabled(true)
+//                .start(this);
+//
+//
+//    }
 }

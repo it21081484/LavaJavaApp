@@ -8,7 +8,7 @@
     android:layout_gravity="center"
     android:background="@drawable/back4"
 
-    tools:context="com.CakeMania.app.MainMenu">
+    tools:context=".MainMenu">
 
 
     <ImageView
