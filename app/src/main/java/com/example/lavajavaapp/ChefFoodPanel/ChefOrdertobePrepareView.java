@@ -16,12 +16,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.CakeMania.app.R;
-import com.CakeMania.app.SendNotification.APIService;
-import com.CakeMania.app.SendNotification.Client;
-import com.CakeMania.app.SendNotification.Data;
-import com.CakeMania.app.SendNotification.MyResponse;
-import com.CakeMania.app.SendNotification.NotificationSender;
+
+import com.example.lavajavaapp.R;
+import com.example.lavajavaapp.SendNotification.APIService;
+import com.example.lavajavaapp.SendNotification.Client;
+import com.example.lavajavaapp.SendNotification.Data;
+import com.example.lavajavaapp.SendNotification.MyResponse;
+import com.example.lavajavaapp.SendNotification.NotificationSender;
+import com.google.android.gms.common.api.Response;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -37,8 +39,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+
 
 public class ChefOrdertobePrepareView extends AppCompatActivity {
 

@@ -11,8 +11,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.CakeMania.app.Customer;
-import com.CakeMania.app.R;
+
+import com.example.lavajavaapp.Customer;
+import com.example.lavajavaapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;

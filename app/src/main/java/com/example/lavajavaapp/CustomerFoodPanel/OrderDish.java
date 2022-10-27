@@ -13,13 +13,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.CakeMania.app.Chef;
-import com.CakeMania.app.ChefFoodPanel.UpdateDishModel;
-import com.CakeMania.app.Customer;
-import com.CakeMania.app.CustomerFoodPanel_BottomNavigation;
-import com.CakeMania.app.R;
+
 import com.bumptech.glide.Glide;
-import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+
+import com.example.lavajavaapp.Chef;
+import com.example.lavajavaapp.ChefFoodPanel.UpdateDishModel;
+import com.example.lavajavaapp.Customer;
+import com.example.lavajavaapp.CustomerFoodPanel_BottomNavigation;
+import com.example.lavajavaapp.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;

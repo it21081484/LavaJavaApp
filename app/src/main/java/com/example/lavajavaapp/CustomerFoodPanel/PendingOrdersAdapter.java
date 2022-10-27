@@ -9,7 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.CakeMania.app.R;
+
+import com.example.lavajavaapp.R;
 
 import java.util.List;
 

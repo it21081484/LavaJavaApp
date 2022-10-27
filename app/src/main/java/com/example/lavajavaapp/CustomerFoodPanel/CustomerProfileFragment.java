@@ -19,9 +19,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.CakeMania.app.Customer;
-import com.CakeMania.app.MainMenu;
-import com.CakeMania.app.R;
+
+import com.example.lavajavaapp.Customer;
+import com.example.lavajavaapp.MainMenu;
+import com.example.lavajavaapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

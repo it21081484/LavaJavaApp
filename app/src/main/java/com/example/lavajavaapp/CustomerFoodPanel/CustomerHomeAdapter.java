@@ -11,10 +11,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.CakeMania.app.ChefFoodPanel.UpdateDishModel;
-import com.CakeMania.app.R;
+
 import com.bumptech.glide.Glide;
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.example.lavajavaapp.ChefFoodPanel.UpdateDishModel;
+import com.example.lavajavaapp.R;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.List;

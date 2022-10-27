@@ -7,11 +7,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.CakeMania.app.ChefFoodPanel.ChefHomeFragment;
-import com.CakeMania.app.ChefFoodPanel.ChefOrderFragment;
-import com.CakeMania.app.ChefFoodPanel.ChefPendingOrdersFragment;
-import com.CakeMania.app.ChefFoodPanel.ChefProfileFragment;
-import com.CakeMania.app.SendNotification.Token;
+
+import com.example.lavajavaapp.ChefFoodPanel.ChefHomeFragment;
+import com.example.lavajavaapp.ChefFoodPanel.ChefOrderFragment;
+import com.example.lavajavaapp.ChefFoodPanel.ChefPendingOrdersFragment;
+import com.example.lavajavaapp.ChefFoodPanel.ChefProfileFragment;
+import com.example.lavajavaapp.SendNotification.Token;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

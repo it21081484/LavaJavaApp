@@ -12,12 +12,13 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 
-import com.CakeMania.app.ChefFoodPanel.ChefPreparedOrderView;
-import com.CakeMania.app.ChefFoodPanel_BottomNavigation;
-import com.CakeMania.app.CustomerFoodPanel.PayableOrders;
-import com.CakeMania.app.CustomerFoodPanel_BottomNavigation;
-import com.CakeMania.app.MainActivity;
-import com.CakeMania.app.R;
+
+import com.example.lavajavaapp.ChefFoodPanel.ChefPreparedOrderView;
+import com.example.lavajavaapp.ChefFoodPanel_BottomNavigation;
+import com.example.lavajavaapp.CustomerFoodPanel.PayableOrders;
+import com.example.lavajavaapp.CustomerFoodPanel_BottomNavigation;
+import com.example.lavajavaapp.MainActivity;
+import com.example.lavajavaapp.R;
 
 import java.util.Random;
 
@@ -88,7 +89,7 @@ public class ShowNotification {
 
 
         NotificationCompat.Builder nBuilder = new NotificationCompat.Builder(context, CHANNEL_ID).setSmallIcon(R.drawable.ic_chef_hat_and_fork)
-                .setColor(ContextCompat.getColor(context,R.color.Red))
+                .setColor(ContextCompat.getColor(context, R.color.Red))
                 .setContentTitle(title)
                 .setContentText(message)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)

@@ -11,7 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.CakeMania.app.R;
+
+import com.example.lavajavaapp.R;
 
 public class CustomerOrderFragment extends Fragment {
 

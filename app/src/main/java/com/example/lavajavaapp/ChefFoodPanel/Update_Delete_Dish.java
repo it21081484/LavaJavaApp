@@ -20,10 +20,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.CakeMania.app.Chef;
-import com.CakeMania.app.ChefFoodPanel_BottomNavigation;
-import com.CakeMania.app.R;
-import com.bumptech.glide.Glide;
+
+import com.example.lavajavaapp.Chef;
+import com.example.lavajavaapp.ChefFoodPanel_BottomNavigation;
+import com.example.lavajavaapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -39,8 +39,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.theartofdev.edmodo.cropper.CropImage;
-import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.util.UUID;
 
