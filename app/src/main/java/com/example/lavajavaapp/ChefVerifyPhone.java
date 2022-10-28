@@ -43,7 +43,7 @@ public class ChefVerifyPhone extends AppCompatActivity {
 
         phonenumber = getIntent().getStringExtra("phonenumber").trim();
 
-        sendverificationcode(phonenumber);
+//        sendverificationcode(phonenumber);
         entercode = (EditText) findViewById(R.id.phoneno);
         txt = (TextView) findViewById(R.id.text);
         Resend = (Button) findViewById(R.id.Resendotp);
@@ -88,7 +88,7 @@ public class ChefVerifyPhone extends AppCompatActivity {
             public void onClick(View v) {
 
                 Resend.setVisibility(View.INVISIBLE);
-                Resendotp(phonenumber);
+//                Resendotp(phonenumber);
 
                 new CountDownTimer(60000, 1000) {
                     @Override
@@ -110,10 +110,10 @@ public class ChefVerifyPhone extends AppCompatActivity {
 
     }
 
-    private void Resendotp(String phonenumber) {
-
-        sendverificationcode(phonenumber);
-    }
+//    private void Resendotp(String phonenumber) {
+//
+//        sendverificationcode(phonenumber);
+//    }
 
 
     private void verifyCode(String code) {
@@ -142,16 +142,17 @@ public class ChefVerifyPhone extends AppCompatActivity {
     }
 
 
-    private void sendverificationcode(String number) {
-
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                number,
-                60,
-                TimeUnit.SECONDS,
-                TaskExecutors.MAIN_THREAD,
-                mCallBack
-        );
-    }
+//    private void sendverificationcode(String number) {
+//
+//
+//        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+//                number,
+//                60,
+//                TimeUnit.SECONDS,
+//                TaskExecutors.MAIN_THREAD,
+//                mCallBack
+//        );
+//    }
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks
             mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {

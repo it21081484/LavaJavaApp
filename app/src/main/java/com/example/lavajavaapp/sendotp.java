@@ -41,7 +41,7 @@ public class sendotp extends AppCompatActivity {
         setContentView(R.layout.activity_sendotp);
 
         phonenumber = getIntent().getStringExtra("phonenumber").trim();
-        sendverificationcode(phonenumber);
+//        sendverificationcode(phonenumber);
 
         entercode = (EditText) findViewById(R.id.phoneno);
         txt = (TextView) findViewById(R.id.text);
@@ -87,7 +87,7 @@ public class sendotp extends AppCompatActivity {
             public void onClick(View v) {
 
                 Resend.setVisibility(View.INVISIBLE);
-                Resendotp(phonenumber);
+//                Resendotp(phonenumber);
 
                 new CountDownTimer(60000, 1000) {
                     @Override
@@ -109,10 +109,10 @@ public class sendotp extends AppCompatActivity {
 
     }
 
-    private void Resendotp(String phonenumber) {
-
-        sendverificationcode(phonenumber);
-    }
+//    private void Resendotp(String phonenumber) {
+//
+//        sendverificationcode(phonenumber);
+//    }
 
 
     private void verifyCode(String code) {
@@ -140,39 +140,39 @@ public class sendotp extends AppCompatActivity {
         }
     }
 
-    private void sendverificationcode(String number) {
-
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                number,
-                60,
-                TimeUnit.SECONDS,
-                TaskExecutors.MAIN_THREAD,
-                new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-                    @Override
-                    public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-                        super.onCodeSent(s, forceResendingToken);
-
-                        verificationId = s;
-
-                    }
-
-                    @Override
-                    public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-
-
-                        String code = phoneAuthCredential.getSmsCode();
-                        if (code != null) {
-                            entercode.setText(code);
-                            verifyCode(code);
-                        }
-                    }
-
-                    @Override
-                    public void onVerificationFailed(FirebaseException e) {
-
-                        Toast.makeText(sendotp.this, "THis 2:" + e.getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                }
-        );
-    }
+//    private void sendverificationcode(String number) {
+//
+//        PhoneAuthProvider.getInstance().verifyPhoneNumber(
+//                number,
+//                60,
+//                TimeUnit.SECONDS,
+//                TaskExecutors.MAIN_THREAD,
+//                new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+//                    @Override
+//                    public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+//                        super.onCodeSent(s, forceResendingToken);
+//
+//                        verificationId = s;
+//
+//                    }
+//
+//                    @Override
+//                    public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
+//
+//
+//                        String code = phoneAuthCredential.getSmsCode();
+//                        if (code != null) {
+//                            entercode.setText(code);
+//                            verifyCode(code);
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onVerificationFailed(FirebaseException e) {
+//
+//                        Toast.makeText(sendotp.this, "THis 2:" + e.getMessage(), Toast.LENGTH_LONG).show();
+//                    }
+//                }
+//        );
+//    }
 }
